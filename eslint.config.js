@@ -1,3 +1,3 @@
-import lvucodes from "@lvucodes/ui/eslint";
+import lelcodes from "@lvucodes/ui/eslint";
 
-export default lvucodes;
+export default lelcodes;

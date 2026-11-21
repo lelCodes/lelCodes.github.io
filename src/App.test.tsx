@@ -20,7 +20,7 @@ const PROJECTS = [
 describe("App", () => {
   it("renders the nav brand", () => {
     render(<App />);
-    expect(screen.getByRole("link", { name: "lvuCodes" })).toBeTruthy();
+    expect(screen.getByRole("link", { name: "lelCodes" })).toBeTruthy();
   });
 
   it("renders the five project cards with the correct hrefs", () => {
@@ -42,8 +42,8 @@ describe("App", () => {
 
   it("links the site's own repository from the footer, named for the repo", () => {
     render(<App />);
-    const repo = screen.getByRole("link", { name: "lvuCodes.github.io on GitHub" });
-    expect(repo.getAttribute("href")).toBe("https://github.com/lvuCodes/lvuCodes.github.io");
+    const repo = screen.getByRole("link", { name: "lelCodes.github.io on GitHub" });
+    expect(repo.getAttribute("href")).toBe("https://github.com/lelCodes/lelCodes.github.io");
     expect(repo.getAttribute("target")).toBe("_blank");
     expect(repo.getAttribute("rel")).toBe("noreferrer noopener");
     expect(repo.closest("footer.footer")).toBeTruthy();
@@ -64,7 +64,7 @@ describe("App", () => {
     expect(localStorage.getItem(THEME_STORAGE_KEY)).toBe(picked.id);
   });
 
-  it("seeds lvuCodes as the default when storage is empty", () => {
+  it("seeds lelCodes as the default when storage is empty", () => {
     expect(localStorage.getItem(THEME_STORAGE_KEY)).toBeNull();
     seedDefaultTheme();
     expect(localStorage.getItem(THEME_STORAGE_KEY)).toBe("lvucodes");

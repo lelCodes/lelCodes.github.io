@@ -1,8 +1,8 @@
 import "./App.css";
 import { ThemeSwitcher, useTheme } from "@lvucodes/ui";
 
-const GITHUB_URL = "https://github.com/lvuCodes";
-const REPO_URL = `${GITHUB_URL}/lvuCodes.github.io`;
+const GITHUB_URL = "https://github.com/lelCodes";
+const REPO_URL = `${GITHUB_URL}/lelCodes.github.io`;
 
 const projects = [
   {
@@ -43,7 +43,7 @@ function App() {
     <>
       <header className="nav">
         <a className="brand" href="#top">
-          lvuCodes
+          lelCodes
         </a>
         <nav>
           <a href={GITHUB_URL} target="_blank" rel="noreferrer">
@@ -90,7 +90,7 @@ function App() {
         <p>
           © {new Date().getFullYear()} Lauren Vu ·{" "}
           <a href={REPO_URL} target="_blank" rel="noreferrer noopener">
-            lvuCodes.github.io on GitHub
+            lelCodes.github.io on GitHub
           </a>
         </p>
       </footer>

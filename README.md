@@ -1,8 +1,8 @@
-# lvuCodes.github.io
+# lelCodes.github.io
 
 Personal site built with [Vite](https://vite.dev) + [React](https://react.dev) + [TypeScript](https://www.typescriptlang.org), deployed to GitHub Pages.
 
-**Live:** https://lvucodes.github.io
+**Live:** https://lelcodes.github.io
 
 ## Local development
 
@@ -28,7 +28,7 @@ npm run verify        # lint + format:check + test + build (the full local gate)
 - **Formatting:** [Prettier](https://prettier.io) using the `@lvucodes/ui/prettier` config (set as the `prettier` key in [`package.json`](package.json)); CSS and `public/` are excluded via [`.prettierignore`](.prettierignore).
 - **Tests:** [Vitest](https://vitest.dev) for unit/component tests and [Playwright](https://playwright.dev) for the SE smoke suite.
 - **Types:** strict TypeScript via the `tsconfig.*.json` files; `npm run build` fails on type errors.
-- **Theme:** the page consumes [`@lvucodes/ui`](https://www.npmjs.com/package/@lvucodes/ui) — surfaces, text, and border track the active theme, with the lvuCodes theme as the default. The purple brand identity stays pinned site-local.
+- **Theme:** the page consumes [`@lvucodes/ui`](https://www.npmjs.com/package/@lvucodes/ui) — surfaces, text, and border track the active theme, with the lelCodes theme as the default. The purple brand identity stays pinned site-local.
 
 ## Deployment
 
