@@ -16,7 +16,7 @@ npm run preview   # serve the built dist/ locally to sanity-check it
 ## Code quality
 
 ```bash
-npm run lint          # eslint + stylelint via @lvucodes/ui shared configs
+npm run lint          # eslint + stylelint via @lelcodes/ui shared configs
 npm run format        # prettier — rewrite files to the canonical style
 npm run format:check  # prettier — report formatting issues without writing
 npm test              # vitest — component and entry-bundling tests
@@ -24,11 +24,11 @@ npm run smoke         # playwright — iPhone SE smoke suite (builds first)
 npm run verify        # lint + format:check + test + build (the full local gate)
 ```
 
-- **Linting:** [ESLint](https://eslint.org) + [stylelint](https://stylelint.io) via the shared `@lvucodes/ui` configs re-exported from [`eslint.config.js`](eslint.config.js) and [`.stylelintrc.json`](.stylelintrc.json).
-- **Formatting:** [Prettier](https://prettier.io) using the `@lvucodes/ui/prettier` config (set as the `prettier` key in [`package.json`](package.json)); CSS and `public/` are excluded via [`.prettierignore`](.prettierignore).
+- **Linting:** [ESLint](https://eslint.org) + [stylelint](https://stylelint.io) via the shared `@lelcodes/ui` configs re-exported from [`eslint.config.js`](eslint.config.js) and [`.stylelintrc.json`](.stylelintrc.json).
+- **Formatting:** [Prettier](https://prettier.io) using the `@lelcodes/ui/prettier` config (set as the `prettier` key in [`package.json`](package.json)); CSS and `public/` are excluded via [`.prettierignore`](.prettierignore).
 - **Tests:** [Vitest](https://vitest.dev) for unit/component tests and [Playwright](https://playwright.dev) for the SE smoke suite.
 - **Types:** strict TypeScript via the `tsconfig.*.json` files; `npm run build` fails on type errors.
-- **Theme:** the page consumes [`@lvucodes/ui`](https://www.npmjs.com/package/@lvucodes/ui) — surfaces, text, and border track the active theme, with the lelCodes theme as the default. The purple brand identity stays pinned site-local.
+- **Theme:** the page consumes [`@lelcodes/ui`](https://www.npmjs.com/package/@lelcodes/ui) — surfaces, text, and border track the active theme, with the lelCodes theme as the default. The purple brand identity stays pinned site-local.
 
 ## Deployment
 

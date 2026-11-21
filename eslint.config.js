@@ -1,3 +1,3 @@
-import lelcodes from "@lvucodes/ui/eslint";
+import lelcodes from "@lelcodes/ui/eslint";
 
-export default lelcodes;
+export default [{ ignores: [".claude/**"] }, ...lelcodes];

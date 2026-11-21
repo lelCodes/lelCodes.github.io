@@ -1,5 +1,5 @@
 import { expect, test } from "@playwright/test";
-import { defineSeSmoke, SE_VIEWPORT } from "@lvucodes/ui/se-smoke";
+import { defineSeSmoke, SE_VIEWPORT } from "@lelcodes/ui/se-smoke";
 
 defineSeSmoke({ expectBackLink: false });
 

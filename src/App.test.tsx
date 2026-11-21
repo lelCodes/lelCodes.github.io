@@ -3,7 +3,7 @@ import { afterEach, describe, expect, it } from "vitest";
 import { cleanup, render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import App from "./App";
-import { THEMES, THEME_STORAGE_KEY, seedDefaultTheme } from "@lvucodes/ui";
+import { THEMES, THEME_STORAGE_KEY, seedDefaultTheme } from "@lelcodes/ui";
 
 // RTL's automatic cleanup only runs under vitest `globals: true`; unmount
 // explicitly so renders don't stack across tests.
@@ -58,7 +58,7 @@ describe("App", () => {
 
   it("applies and persists the theme picked from the switcher", async () => {
     render(<App />);
-    const picked = THEMES.find((t) => t.id !== "lvucodes")!;
+    const picked = THEMES.find((t) => t.id !== "lelcodes")!;
     await userEvent.click(screen.getByRole("button", { name: picked.label }));
     expect(document.documentElement.dataset.theme).toBe(picked.id);
     expect(localStorage.getItem(THEME_STORAGE_KEY)).toBe(picked.id);
@@ -67,6 +67,6 @@ describe("App", () => {
   it("seeds lelCodes as the default when storage is empty", () => {
     expect(localStorage.getItem(THEME_STORAGE_KEY)).toBeNull();
     seedDefaultTheme();
-    expect(localStorage.getItem(THEME_STORAGE_KEY)).toBe("lvucodes");
+    expect(localStorage.getItem(THEME_STORAGE_KEY)).toBe("lelcodes");
   });
 });

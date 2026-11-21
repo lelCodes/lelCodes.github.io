@@ -14,3 +14,4 @@ AI-USAGE.md
 
 # Stylesheets are hand-formatted and linted by stylelint instead.
 **/*.css
+.claude

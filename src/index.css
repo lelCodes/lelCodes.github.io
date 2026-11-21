@@ -1,5 +1,5 @@
 :root {
-  /* Brand tokens track the active @lvucodes/ui theme accent, like surfaces,
+  /* Brand tokens track the active @lelcodes/ui theme accent, like surfaces,
      text, and border do. */
   --purple: var(--accent);
   --purple-light: color-mix(in srgb, var(--accent) 12%, var(--bg));

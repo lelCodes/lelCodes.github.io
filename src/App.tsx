@@ -1,5 +1,5 @@
 import "./App.css";
-import { ThemeSwitcher, useTheme } from "@lvucodes/ui";
+import { ThemeSwitcher, useTheme } from "@lelcodes/ui";
 
 const GITHUB_URL = "https://github.com/lelCodes";
 const REPO_URL = `${GITHUB_URL}/lelCodes.github.io`;
