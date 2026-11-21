@@ -1,12 +1,12 @@
 # AI Usage
 
-**100% AI, 0% human**, by lines added since the baseline commit.
+**99.8% AI, 0.2% human**, by lines added since the baseline commit.
 
 | Measure | Lines added |
 |---|---|
-| **By Claude** | 554 |
-| **By the author** | 0 |
-| **Total since baseline** | 554 |
+| **By Claude** | 574 |
+| **By the author** | 1 |
+| **Total since baseline** | 575 |
 
 Baseline commit `45559a5` (2026-10-06). Regenerate with `node scripts/ai-attribution.mjs`.
 
@@ -15,7 +15,9 @@ Baseline commit `45559a5` (2026-10-06). Regenerate with `node scripts/ai-attribu
 | Change type | Commits | By Claude | By the author |
 |---|---|---|---|
 | `ci` | 1 | 535 | 0 |
+| `chore` | 1 | 20 | 0 |
 | `release` | 1 | 19 | 0 |
+| `unlabeled` | 1 | 0 | 1 |
 
 ## Measurement Scope
 
@@ -43,4 +45,4 @@ Baseline commit `45559a5` (2026-10-06). Regenerate with `node scripts/ai-attribu
 - `playwright-report/**`
 - `test-results/**`
 
-_Generated 2026-11-13 15:56:21Z.
+_Generated 2026-11-21 22:47:32Z.
